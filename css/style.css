@@ -273,13 +273,21 @@ footer, footer a {color: white !important;}
 .page .searchBar[data-uk-sticky].uk-active {
   padding: 20px;
   top: 0 !important;
-  left: calc(50% - 930px/2);
-  max-width: 930px !important;
+  left: 25px;
+  max-width: 980px !important;
+  width: calc(100% - 25px*2) !important;
 }
 .bg_img .uk-width-medium-1-2:nth-child(1) {width: calc(100% - 532px) !important;}
 .bg_img .uk-width-medium-1-2:nth-child(2) {width: 532px;}
 .bg_img .uk-width-medium-1-2:nth-child(2) .slideshow_lightbox.fullImage_slideshow .uk-slideshow .uk-cover-background {width: 500px; height: 300px !important;}
 
+}
+
+@media (min-width:998px) {
+.page .searchBar[data-uk-sticky].uk-active {
+  left: calc(50% - 930px/2);
+  max-width: 930px !important;
+}  
 }
 
 @media (min-width:1220px) {
