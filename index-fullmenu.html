@@ -60,10 +60,11 @@
       <div class="uk-position-relative uk-visible-large">
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
-          <ul class="topList list_horizontal list_line color_white uk-text-center">
-            <li><a class="hover_linkline" href="#" title="#">圖書館</a></li>
+          <ul class="topList list_horizontal list_line color_white uk-text-right">
+            <li><a class="hover_linkline" href="#" title="#">圖書館首頁</a></li>
             <li><a class="hover_linkline" href="#" title="#">最新消息</a></li>
             <li><a class="hover_linkline" href="#" title="#">常見問題</a></li>
+            <li><a class="hover_linkline" href="#" title="#">使用說明</a></li>
             <li><a class="hover_linkline" href="#" title="#">English</a></li>
             <li><a class="bg_hover_white_color_primary uk-border-rounded" href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle fa-fw"></i>登入</a></li>
           </ul>
@@ -73,321 +74,371 @@
         <!-- <div class="bg_secondary opacity20 uk-overlay-panel"></div> -->
         <div class="uk-container uk-container-center">
           <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-3-6 uk-width-small-2-6 uk-width-large-1-4 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
-            </div>
-            <div class="uk-width-2-6 uk-width-small-3-6 uk-padding-remove uk-vertical-align uk-hidden-large">
-              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold"><a class="remove_underline" href="http://www.stm.org.tw/STM_library/" title="系統首頁">電子資源管理系統<span class="ml-1 uk-hidden-small">E-Resource Management Gateway</span></a></small></div>
-            </div>
-            <div id="btn_canvas" class="uk-width-1-6 uk-vertical-align uk-text-right uk-hidden-large">
-              <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
-            </div>
-            <div class="uk-width-large-3-5 uk-padding-remove uk-vertical-align uk-visible-large">
-              <div class="text_center_lL uk-width-1-1 uk-vertical-align-middle">
-                <h4 class="uk-text-contrast uk-margin-remove"><span class="padding_small uk-text-bold"><a class="remove_underline" href="http://www.stm.org.tw/STM_library/" title="系統首頁">電子資源管理系統<span class="headerSpan uk-margin-small-left">E-Resource Management Gateway</span></a></span></h4>
+            <div class="uk-width-5-6 uk-width-medium-2-3 uk-width-large-1-4 uk-padding-remove uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle">
+                <a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html">
+                  <img class="uk-width-1-1" alt="logo" title="logo" src="img/logo.svg">
+                </a>
               </div>
+            </div>
+            <div id="btn_canvas" class="uk-width-1-6 uk-width-medium-1-3 uk-vertical-align uk-text-right uk-hidden-large">
+              <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
             </div>
           </div>
           <!-- #logoMenuBar -->
           <div id="offcanvas" class="uk-offcanvas">
             <nav class="uk-offcanvas-bar bg_primary">
-              <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon uk-text-contrast" data-uk-nav>
-                <!-- <li class="uk-parent">
-                  <a href="#" title="#">資料庫</a>
-                  <ul class="uk-nav-sub">
-                    <li><a href="#" title="#">Item</a></li>
-                    <li><a href="#" title="#">Item</a></li>
-                  </ul>
-                </li> -->
-                <li><a href="#" title="#">資料庫</a></li>
-                <li><a href="#" title="#">電子期刊</a></li>
-                <li><a href="#" title="#">電子書</a></li>
-                <li><a href="#" title="#">網路資源</a></li>
-                <li><a href="#" title="#">我的資源</a></li>
+              <ul class="text-white uk-nav uk-nav-offcanvas">
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">圖書館</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">首頁</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">English</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a>
+                  </div>
+                </li>
                 <li class="uk-nav-divider"></li>
-                <li><a href="#" title="#">圖書館</a></li>
-                <li><a href="#" title="#">最新消息</a></li>
-                <li><a href="#" title="#">常見問題</a></li>
-                <li><a href="#" title="#">English</a></li>
-                <li><a href="#login" data-uk-modal="{center:true}"><i class="fas fa-user-circle fa-fw"></i>登入</a></li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">資料庫</a>
+                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
+                  </div>
+                  <ul class="toggle hidden pl-4 pr-2 pb-2">
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">題名瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">類型瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">出版商瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">免費資源</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">新到資料庫</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門收藏</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門推薦</a></li>
+                  </ul>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">電子期刊</a>
+                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
+                  </div>
+                  <ul class="toggle hidden pl-4 pr-2 pb-2">
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">刊名瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">出版社/平台</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">館藏JCR清單</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">新到電子期刊</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門收藏</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門推薦</a></li>
+                  </ul>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">電子書</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">醫學資源</a>
+                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
+                  </div>
+                  <ul class="toggle hidden pl-4 pr-2 pb-2">
+                    <li class="uk-display-inline-block">
+                      <a href="#" class="padding_small pl-4">電子期刊</a>
+                      <ul>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">刊名瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">JCR主題瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">出版社/平台</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">新到電子期刊</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
+                      </ul>
+                    </li>
+                    <li class="uk-display-inline-block">
+                      <a href="#" class="padding_small pl-4">資料庫</a>
+                      <ul>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">題名瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">適用學系</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">主題瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">類型瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">出版商瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">語文瀏覽</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">試用資源</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">免費資源</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">新到資料庫</a></li>
+                        <li class="uk-display-inline-block"><a href="#" class="padding_small">熱門點閱</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">書目管理軟體</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">講習課程</a>
+                  </div>
+                </li>
+                <li class="border-bottom border-dark uk-parent">
+                  <div class="d-flex p-2 px-3">
+                    <a class="w-100" href="#" title="#">我的資源</a>
+                    <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
+                  </div>
+                  <ul class="toggle hidden pl-4 pr-2 pb-2">
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">資料庫</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">電子期刊</a></li>
+                    <li class="uk-display-inline-block"><a href="#" class="padding_small">電子書</a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
           <!-- #offcanvas -->
         </div>
         <!-- <hr class="border_white_opacity3 uk-margin-remove uk-position-relative"> -->
-        <div class="menuBar uk-position-relative uk-width-1-1">
-          <nav class="nav_dropdown_center uk-text-center uk-text-contrast uk-visible-large">
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">資料庫</a>
-              <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
-                <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
-                  <div class="text-left uk-position-relative">
-                    <ul class="uk-grid">
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>題名瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>類型瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版商瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏
-                            覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>免費資源</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到資料庫</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門收藏</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門推薦</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">電子期刊</a>
-              <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
-                <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
-                  <div class="text-left uk-position-relative">
-                    <ul class="uk-grid">
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>刊名瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版社/平台</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>館藏JCR清單</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏
-                            覽</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到電子期刊</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門收藏</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門推薦</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">電子書</a>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">醫學資源</a>
-              <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
-                <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
-                  <div class="text-left uk-position-relative">
-                    <ul class="uk-grid">
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2 uk-flex-item-1"><a class="underline d-block" href="#" title="#"><span class="fontSize1_2 uk-text-bold">電子期刊</span></a>
-                        <ul class="listNoStyle pl-4 pt-2 uk-grid">
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>刊名瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>JCR主題瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版社/平台</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到電子期刊</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a></li>
-                        </ul>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2 uk-flex-item-1"><a class="underline d-block" href="#" title="#"><span class="fontSize1_2 uk-text-bold">資料庫</span></a>
-                        <ul class="listNoStyle pl-4 pt-2 uk-grid">
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>題名瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>類型瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版商瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏覽</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>免費資源</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到資料庫</span></a></li>
-                          <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">書目管理軟體</a>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">講習課程</a>
-            </div>
-            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">個人化設定</a>
-              <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
-                <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
-                  <div class="text-left uk-position-relative">
-                    <ul class="uk-grid">
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>資料庫</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>電子期刊</span></a>
-                      </li>
-                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
-                        <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>電子書</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <!-- .dropdownMenu_center -->
-        </div>
       </div>
       <!-- .borderB1 -->
     </header>
     <!-- header -->
-    <div id="searchBar">
-      <!-- <div id="searchBar" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}"> -->
-      <div class="paddingLR_medium paddingB_large paddingTB_xlarge_l uk-flex uk-flex-center uk-flex-middle">
-        <div class="searchBar box_shadow3 padding_large uk-width-large-1-2 uk-container uk-container-center uk-position-relative">
-          <div class="bg_white opacity90 uk-border-rounded uk-overlay-panel"></div>
-          <form class="uk-form uk-position-relative">
-            <div class="tabBar_switcher">
-              <ul class="tab_primary uk-tab" data-uk-switcher="{connect:'#switcher'}">
-                <li>
-                  <a href="#">電子資源目錄</a>
+  </div>
+  <div class="menuBar bg_primary uk-position-relative uk-width-1-1">
+    <nav class="nav_dropdown_center uk-text-center uk-text-contrast uk-visible-large">
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">資料庫</a>
+        <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
+          <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
+            <div class="text-left uk-position-relative">
+              <ul class="uk-grid">
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>題名瀏覽</span></a>
                 </li>
-                <li>
-                  <a href="#">電子書</a>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a>
                 </li>
-                <li>
-                  <a href="#">資源探索</a>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>類型瀏覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版商瀏覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏
+                      覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>免費資源</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到資料庫</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門收藏</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門推薦</span></a>
                 </li>
               </ul>
-              <div class="uk-margin-top">
-                <ul id="switcher" class="uk-switcher uk-margin">
-                  <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-large-3-10 uk-visible-large">
-                        <select class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search1">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-3-4 uk-width-large-5-10">
-                        <input id="search1" class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-1-4 uk-width-large-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <div class="mt-1 uk-form-row">
-                      <a class="uk-align-right" href="#">進階查詢</a>
-                      <span class="uk-form-label">資料類型：</span>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type1" checked>資料庫</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type1">電子期刊</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type1">電子書</label>
-                    </div>
-                    <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
-                  </li>
-                  <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-large-3-10 uk-visible-large">
-                        <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search2">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-3-4 uk-width-large-5-10">
-                        <input id="search2" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-1-4 uk-width-large-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <div class="mt-1 uk-form-row">
-                      <a class="uk-align-right" href="#">進階查詢</a>
-                      <span class="uk-form-label">資料類型：</span>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type2" checked>資料庫</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type2">電子期刊</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type2">電子書</label>
-                    </div>
-                    <p class="uk-form-help-block uk-clearfix">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生物</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月旦</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中國</a></span></p>
-                  </li>
-                  <li>
-                    <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                      <div class="uk-width-large-3-10 uk-visible-large">
-                        <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search2">
-                          <option>全部</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-3-4 uk-width-large-5-10">
-                        <input id="search2" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                      </div>
-                      <div class="uk-width-1-4 uk-width-large-2-10">
-                        <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                      </div>
-                    </div>
-                    <div class="mt-1 uk-form-row">
-                      <a class="uk-align-right" href="#">進階查詢</a>
-                      <span class="uk-form-label">資料類型：</span>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type3" checked>資料庫</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type3">電子期刊</label>
-                      <label class="uk-margin-right">
-                        <input class="uk-margin-small-right" type="radio" name="type3">電子書</label>
-                    </div>
-                    <p class="uk-form-help-block uk-clearfix">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中</a></span></p>
-                  </li>
-                </ul>
-              </div>
-              <!-- <a class="uk-position-bottom-right" href="#">進階查詢</a> -->
             </div>
-            <!-- .tabBar_switcher -->
-          </form>
+          </div>
         </div>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">電子期刊</a>
+        <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
+          <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
+            <div class="text-left uk-position-relative">
+              <ul class="uk-grid">
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>刊名瀏覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版社/平台</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>館藏JCR清單</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏
+                      覽</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到電子期刊</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門收藏</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門推薦</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">電子書</a>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">醫學資源</a>
+        <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
+          <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
+            <div class="text-left uk-position-relative">
+              <ul class="uk-grid">
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2 uk-flex-item-1"><a class="underline d-block" href="#" title="#"><span class="fontSize1_2 uk-text-bold">電子期刊</span></a>
+                  <ul class="listNoStyle pl-4 pt-2 uk-grid">
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>刊名瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>JCR主題瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版社/平台</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到電子期刊</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a></li>
+                  </ul>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2 uk-flex-item-1"><a class="underline d-block" href="#" title="#"><span class="fontSize1_2 uk-text-bold">資料庫</span></a>
+                  <ul class="listNoStyle pl-4 pt-2 uk-grid">
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>題名瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>適用學系</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>主題瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>類型瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>出版商瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>語文瀏覽</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>試用資源</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>免費資源</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>新到資料庫</span></a></li>
+                    <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2"><a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>熱門點閱</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">書目管理軟體</a>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">資源探索</a>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">講習課程</a>
+      </div>
+      <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+        <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">我的資源</a>
+        <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
+          <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
+            <div class="text-left uk-position-relative">
+              <ul class="uk-grid">
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>資料庫</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>電子期刊</span></a>
+                </li>
+                <li class="min_width1_2! min_width1_3!@m min_width1_5!@l py-2">
+                  <a class="d-block" href="#" title="#"><i class="uk-icon-angle-right uk-margin-small-right"></i><span>電子書</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- .dropdownMenu_center -->
+  </div>
+  <div id="searchBar" class="mt-3">
+    <!-- <div id="searchBar" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}"> -->
+    <div class="paddingLR_medium paddingB_large paddingTB_xlarge_l uk-flex uk-flex-center uk-flex-middle">
+      <div class="searchBar box_shadow3 padding_large uk-width-large-2-3 uk-width-xlarge-1-2 uk-container uk-container-center uk-position-relative">
+        <div class="bg_white opacity90 uk-border-rounded uk-overlay-panel"></div>
+        <form class="uk-form uk-position-relative">
+          <!-- <h3>資源查詢</h3> -->
+          <div class="tabBar_switcher">
+            <ul class="tab_primary uk-tab" data-uk-switcher="{connect:'#switcher'}">
+              <li>
+                <a href="#">資源查詢</a>
+              </li>
+            </ul>
+            <div class="uk-margin-top">
+              <ul id="switcher" class="uk-switcher uk-margin">
+                <li>
+                  <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="uk-width-medium-4-10">
+                      <input class="uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                    </div>
+                    <div class="uk-width-1-2 uk-width-medium-2-10">
+                      <select class="uk-form-large uk-width-1-1">
+                        <option>-不限欄位-</option>
+                        <option>資源名稱</option>
+                        <option>資料庫平台/出版者</option>
+                        <option>資源主題</option>
+                        <option>ISSN</option>
+                      </select>
+                    </div>
+                    <div class="uk-width-1-2 uk-width-medium-2-10">
+                      <select class="uk-form-large uk-width-1-1">
+                        <option>-所有資源-</option>
+                        <option>資料庫</option>
+                        <option>電子期刊</option>
+                      </select>
+                    </div>
+                    <div class="uk-width-medium-2-10">
+                      <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                    </div>
+                  </div>
+                  <div class="mt-1 uk-form-row">
+                    <a class="mb-0 uk-align-right" href="#">進階查詢</a>
+                    <label class="uk-margin-right"><input class="uk-margin-small-right" type="checkbox">精確檢索</label>
+                  </div>
+                  <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
+                </li>
+              </ul>
+            </div>
+            <!-- <a class="uk-position-bottom-right" href="#">進階查詢</a> -->
+          </div>
+          <!-- .tabBar_switcher -->
+        </form>
       </div>
     </div>
   </div>

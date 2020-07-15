@@ -76,6 +76,11 @@ function RemoveClass(el, className) {
   }
 }
 
+//Triger Click event
+function OnClick(el) {
+  document.querySelector(el).click();
+}
+
 //--------------- end pure js ----------------------------------------------------------//
 
 $(document).ready(function() {

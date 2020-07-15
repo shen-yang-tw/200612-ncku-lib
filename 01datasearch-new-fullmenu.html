@@ -59,9 +59,10 @@
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
           <ul class="topList list_horizontal list_line color_white uk-text-center">
-            <li><a class="hover_linkline" href="#" title="#">圖書館</a></li>
+            <li><a class="hover_linkline" href="#" title="#">圖書館首頁</a></li>
             <li><a class="hover_linkline" href="#" title="#">最新消息</a></li>
             <li><a class="hover_linkline" href="#" title="#">常見問題</a></li>
+            <li><a class="hover_linkline" href="#" title="#">使用說明</a></li>
             <li><a class="hover_linkline" href="#" title="#">English</a></li>
             <li><a class="bg_hover_white_color_primary uk-border-rounded" href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle fa-fw"></i>登入</a></li>
           </ul>
@@ -71,19 +72,11 @@
         <!-- <div class="bg_secondary opacity20 uk-overlay-panel"></div> -->
         <div class="uk-container uk-container-center">
           <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-3-6 uk-width-large-1-4 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.svg"></a></div>
+            <div class="uk-width-5-6 uk-width-medium-2-3 uk-width-large-1-4 uk-padding-remove uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img class="uk-width-1-1" alt="logo" title="logo" src="img/logo.svg"></a></div>
             </div>
-            <div class="uk-width-2-6 uk-padding-remove uk-vertical-align uk-hidden-large">
-              <div class="uk-vertical-align-middle"><small class="lineHeight_normal fontSize07 fontSize1@s fontSize1_2@m text-white font-weight-bold">電子資源管理系統<span class="ml-1 uk-hidden-small">E-Resource Management Gateway</span></small></div>
-            </div>
-            <div id="btn_canvas" class="uk-width-1-6 uk-vertical-align uk-text-right uk-hidden-large">
+            <div id="btn_canvas" class="uk-width-1-6 uk-width-medium-1-3 uk-vertical-align uk-text-right uk-hidden-large">
               <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
-            </div>
-            <div class="uk-width-large-3-5 uk-padding-remove uk-vertical-align uk-visible-large">
-              <div class="text_center_lL uk-width-1-1 uk-vertical-align-middle">
-                <h4 class="uk-text-contrast uk-margin-remove"><span class="padding_small uk-text-bold">電子資源管理系統<span class="headerSpan uk-margin-small-left">E-Resource Management Gateway</span></span></h4>
-              </div>
             </div>
           </div>
           <!-- #logoMenuBar -->
@@ -202,7 +195,7 @@
                 </li>
                 <li class="border-bottom border-dark uk-parent">
                   <div class="d-flex p-2 px-3">
-                    <a class="w-100" href="#" title="#">個人化設定</a>
+                    <a class="w-100" href="#" title="#">我的資源</a>
                     <a class="min_width20 flex-shrink-1 text-right" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle text-white"><i class="uk-icon-angle-right"></i></span><span class="toggle hidden text-white"><i class="uk-icon-angle-down"></i></span></a>
                   </div>
                   <ul class="toggle hidden pl-4 pr-2 pb-2">
@@ -354,10 +347,13 @@
               <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">書目管理軟體</a>
             </div>
             <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
+              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">資源探索</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
               <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">講習課程</a>
             </div>
             <div class="uk-button-dropdown" data-uk-dropdown="{justify:'.menuBar'}">
-              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">個人化設定</a>
+              <a class="fontSize1_2 padding_small paddingLR_medium uk-display-inline-block uk-text-bold" href="#" title="#">我的資源</a>
               <div class="border_remove borderRadius0 shadow uk-dropdown uk-dropdown-bottom uk-padding-remove">
                 <div class="container_responsive p-2_l paddingTB_xlarge_l uk-container uk-container-center">
                   <div class="text-left uk-position-relative">
@@ -396,7 +392,7 @@
       </div>
       <div class="min_height100vh min_heightLAuto bg_white border_black_opacity1 box_shadow1 uk-panel uk-panel-box">
         <h2 class="color_grey underline uk-position-relative">資料庫查詢<a class="btn_secondary mt-1 uk-button uk-button-small uk-position-top-right uk-hidden-large" href="#" title="#">進階查詢</a></h2>
-        <div class="searchBar uk-form uk-visible-large" data-uk-sticky="{top:0, animation: 'uk-animation-slide-bottom'}">
+        <!-- <div class="searchBar uk-form uk-visible-large" data-uk-sticky="{top:0, animation: 'uk-animation-slide-bottom'}">
           <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
             <div class="uk-width-3-10 uk-width-medium-2-10">
               <select class="uk-margin-small-bottom uk-form-large uk-width-1-1" aria-labelledby="search">
@@ -423,11 +419,11 @@
               <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
             </div>
           </div>
-        </div>
+        </div> -->
         <div id="boundary" class="bg-light p-2 mt-2 uk-position-relative">
-          <a class="btn_secondary uk-margin-remove uk-accordion-title uk-button uk-hidden-large" onclick="toggleClasses('.option', 'hidden'); return false;">題名篩選</a>
+          <a class="btn_secondary uk-margin-remove uk-accordion-title uk-button uk-hidden-large" onclick="toggleClasses('.option', 'hidden'); return false;">篩選</a>
           <!-- <button class="btn_secondary uk-button" type="button">篩選</button> -->
-          <div class="uk-button-dropdown uk-position-top-right uk-hidden-large" data-uk-dropdown="{boundary:'#boundary', pos:'bottom-right'}">
+          <div class="mt-2 mr-2 uk-button-dropdown uk-position-top-right uk-hidden-large" data-uk-dropdown="{boundary:'#boundary', pos:'bottom-right'}">
             <button class="uk-button" type="button">細分搜尋結果</button>
             <div class="uk-dropdown uk-position-z-index">
               <ul class="uk-nav uk-nav-dropdown uk-text-left">
@@ -443,61 +439,201 @@
               </ul>
             </div>
           </div>
-          <div class="option hidden visible@l">
+          <div class="option hidden mt-2 visible@l">
             <ul class="tab_primary uk-tab" data-uk-tab="{connect:'#switcher'}">
               <li>
-                <a href="#" title="#">題名篩選</a>
+                <a href="#" title="#">資源查詢</a>
               </li>
               <li>
                 <a href="#" title="#">主題篩選</a>
+              </li>
+              <li>
+                <a href="#" title="#">適用系所</a>
               </li>
             </ul>
             <div class="border bg-white borderTop0">
               <ul id="switcher" class="uk-switcher uk-margin">
                 <li class="py-2 py-lg-3">
                   <div class="px-2 px-lg-3 uk-margin">
-                    <!-- <p class="uk-text-bold">題名篩選</p> -->
-                    <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-                      <div class="uk-width-small-1-4 uk-width-medium-1-5">
-                        <span class="border px-1 uk-text-center uk-width-1-1">注音符號</span>
+                    <div class="searchBar uk-form">
+                      <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                        <div class="uk-width-medium-4-10">
+                          <input class="uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                        </div>
+                        <div class="uk-width-1-2 uk-width-medium-2-10">
+                          <select class="uk-form-large uk-width-1-1">
+                            <option>-不限欄位-</option>
+                            <option>資源名稱</option>
+                            <option>資料庫平台/出版者</option>
+                            <option>資源主題</option>
+                            <option>ISSN</option>
+                          </select>
+                        </div>
+                        <div class="uk-width-1-2 uk-width-medium-2-10">
+                          <select class="uk-form-large uk-width-1-1">
+                            <option>-所有資源-</option>
+                            <option>資料庫</option>
+                            <option>電子期刊</option>
+                          </select>
+                        </div>
+                        <div class="uk-width-medium-2-10">
+                          <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                        </div>
                       </div>
-                      <div class="uk-width-small-3-4 uk-width-medium-4-5">
-                        <p class="child_margin uk-margin-small uk-clearfix"><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄅ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄆ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄇ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄈ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄉ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄊ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄋ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄌ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄍ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄎ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄏ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄐ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄑ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄒ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄓ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄔ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄕ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄖ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄗ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄘ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄙ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄚ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄜ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄞ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄠ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄡ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄢ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄣ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄦ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄧ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄨ</a><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">ㄩ</a></p>
-                      </div>
-                      <div class="uk-width-small-1-4 uk-width-medium-1-5">
-                        <span class="border px-1 uk-text-center uk-width-1-1">中文筆劃</span>
-                      </div>
-                      <div class="uk-width-small-3-4 uk-width-medium-4-5">
-                        <p class="child_margin uk-margin-small uk-clearfix"><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">1</a></p>
-                      </div>
-                      <div class="uk-width-small-1-4 uk-width-medium-1-5">
-                        <span class="border px-1 uk-text-center uk-width-1-1">A to Z</span>
-                      </div>
-                      <div class="uk-width-small-3-4 uk-width-medium-4-5">
-                        <p class="child_margin uk-margin-small uk-clearfix"><a class="px-1 uk-button uk-button-small uk-margin-small-bottom" href="#" title="#">A</a></p>
+                      <div class="mt-1 uk-form-row">
+                        <a class="mb-0 uk-align-right" href="#">進階查詢</a>
+                        <label class="uk-margin-right"><input class="uk-margin-small-right" type="checkbox">精確檢索</label>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="py-2 py-lg-3">
                   <div class="px-2 px-lg-3 uk-margin">
-                    <!-- <p class="uk-text-bold">主題篩選</p> -->
+                    <p class="uk-text-bold">社會科學學院</p>
                     <ul class="uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 uk-grid-width-xlarge-1-5">
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">人文社會<span class="parentheses uk-text-small">163</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">生命科學與醫學<span class="parentheses uk-text-small">36</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">法學<span class="parentheses uk-text-small">29</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">科學工程<span class="parentheses uk-text-small">61</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">商學管理<span class="parentheses uk-text-small">92</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">教育<span class="parentheses uk-text-small">12</span></a></li>
-                      <li><span class="uk-margin-small-right">•</span><a class="hover_linkline" href="#" title="#">綜合性<span class="parentheses uk-text-small">144</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#li01" title="#" onclick="OnClick('.tab_primary>li:first-child>a')">人文社會<span class="parentheses uk-text-small">163</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">生命科學與醫學<span class="parentheses uk-text-small">36</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">法學<span class="parentheses uk-text-small">29</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">科學工程<span class="parentheses uk-text-small">61</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">商學管理<span class="parentheses uk-text-small">92</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">教育<span class="parentheses uk-text-small">12</span></a></li>
+                      <li><span class="color_primary uk-margin-small-right">•</span><a class="color_primary hover_linkline d-inline" href="#" title="#">綜合性<span class="parentheses uk-text-small">144</span></a></li>
                     </ul>
+                  </div>
+                </li>
+                <li class="py-2 py-lg-3">
+                  <div class="px-2 px-lg-3 uk-margin">
+                    <p class="uk-text-bold">系所</p>
+                    <div class="overflow_scroll200">
+                      <ul class="uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4 uk-grid-width-xlarge-1-5" data-uk-grid-margin>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">人社院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">人社院學士班系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">人類所<span class="parentheses uk-text-small">9035</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">中文系<span class="parentheses uk-text-small">8703</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">外文系<span class="parentheses uk-text-small">8697</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">台文所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">社會所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">哲學所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">語言所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">歷史所<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">工學院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">工工系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">化工系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">材料系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">奈微所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">動機系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">醫工所<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">生科院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">分生所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">分醫所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">生技所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">生科系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">生資所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">系神所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">醫科系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">全校<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">人社分館<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">全校<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">南大分館<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">總圖書館<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">總圖書館(理工共用)<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">竹師教育學院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">中語系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">心諮系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">幼教系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">英語系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">特教系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">教育系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">臺語所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">數理所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">學科所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">環文系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">應科系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">體育系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">科管院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">服科所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">科法所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">計財系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">科管所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">經濟系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">原科院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">工科系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">核工所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">醫環系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">清華學院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">通識中心<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">理學院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">天文所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">化學中心<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">化學系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">物理中心<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">物理系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">計科所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">統計所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">數學中心<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">數學系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">電資院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">光電所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">資工系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">電子所<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">電機系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">資應所<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-nav">
+                            <li class="pl-0 uk-nav-header">藝術學院<span class="parentheses uk-text-small">163</span></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">音樂系<span class="parentheses uk-text-small">3</span></a></li>
+                            <li><a class="color_primary hover_linkline pl-0" href="#" title="#">藝設系<span class="parentheses uk-text-small">3</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-
+        <!-- id="boundary" -->
         <div class="uk-grid uk-margin-top" data-uk-grid-margin>
           <div class="uk-width-large-1-4 uk-width-xlarge-1-5">
             <div class="listTabs listIconIndent uk-visible-large">
@@ -611,8 +747,9 @@
           <div class="uk-width-large-3-4 uk-width-xlarge-4-5">
             <div class="uk-position-relative">
               <div class="content">
+                <button class="ml-2 uk-button uk-float-right" type="button" data-uk-toggle="{target:'.name'}"><i class="mr-1 uk-icon-sliders"></i>題名篩選</button>
                 <div class="fontSize_small uk-margin">
-                  <span class="uk-margin-right">查詢結果：<span class="number">999</span>筆</span>
+                  <span class="mb-3 uk-margin-right">查詢結果：<span class="number">999</span>筆</span>
                   <span>Refined by：</span>
                   <span class="padding_small uk-alert uk-margin-small" data-uk-alert>
                     <a href="#" class="uk-alert-close uk-close" aria-label="Close"></a>
@@ -623,311 +760,347 @@
                     <span>主題 人類社會</span>
                   </span>
                 </div>
-                <div class="uk-form uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
-                  <div class="uk-width-1-2 uk-width-large-1-4 uk-visible-large">
-                    <select class="uk-width-1-1">
-                      <option>最新在前</option>
-                    </select>
+                <div class="name uk-panel uk-panel-box uk-panel-box-primary uk-hidden">
+                  <!-- <p class="uk-text-bold">題名篩選</p> -->
+                  <div class="flex-wrap uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="min_width100">
+                      <span class="uk-width-1-1">電子期刊：</span>
+                    </div>
+                    <div class="uk-flex-item-1">
+                      <a class="px-1 linkline" href="#" title="#">所有</a>
+                      <small class="parentheses"><span class="pr-1">12345</span>筆</small>
+                    </div>
                   </div>
-                  <div class="uk-width-1-2 uk-width-large-1-4 uk-text-right push-large-2-4 uk-visible-large">
-                    <label>每頁
-                      <input type="number" min="0" max="10" value="5" class="min_width50"> 筆
-                    </label>
+                  <div class="flex-wrap uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="min_width100">
+                      <span class="uk-width-1-1">注音符號：</span>
+                    </div>
+                    <div class="uk-flex-item-1">
+                      <a class="px-1 linkline" href="#" title="#">ㄅ</a><a class="px-1 linkline" href="#" title="#">ㄆ</a><a class="px-1 linkline" href="#" title="#">ㄇ</a><a class="px-1 linkline" href="#" title="#">ㄈ</a><a class="px-1 linkline" href="#" title="#">ㄉ</a><a class="px-1 linkline" href="#" title="#">ㄊ</a><a class="px-1 linkline" href="#" title="#">ㄋ</a><a class="px-1 linkline" href="#" title="#">ㄌ</a><a class="px-1 linkline" href="#" title="#">ㄍ</a><a class="px-1 linkline" href="#" title="#">ㄎ</a><a class="px-1 linkline" href="#" title="#">ㄏ</a><a class="px-1 linkline" href="#" title="#">ㄐ</a><a class="px-1 linkline" href="#" title="#">ㄑ</a><a class="px-1 linkline" href="#" title="#">ㄒ</a><a class="px-1 linkline" href="#" title="#">ㄓ</a><a class="px-1 linkline" href="#" title="#">ㄔ</a><a class="px-1 linkline" href="#" title="#">ㄕ</a><a class="px-1 linkline" href="#" title="#">ㄖ</a><a class="px-1 linkline" href="#" title="#">ㄗ</a><a class="px-1 linkline" href="#" title="#">ㄘ</a><a class="px-1 linkline" href="#" title="#">ㄙ</a><a class="px-1 linkline" href="#" title="#">ㄚ</a><a class="px-1 linkline" href="#" title="#">ㄜ</a><a class="px-1 linkline" href="#" title="#">ㄞ</a><a class="px-1 linkline" href="#" title="#">ㄠ</a><a class="px-1 linkline" href="#" title="#">ㄡ</a><a class="px-1 linkline" href="#" title="#">ㄢ</a><a class="px-1 linkline" href="#" title="#">ㄣ</a><a class="px-1 linkline" href="#" title="#">ㄦ</a><a class="px-1 linkline" href="#" title="#">ㄧ</a><a class="px-1 linkline" href="#" title="#">ㄨ</a><a class="px-1 linkline" href="#" title="#">ㄩ</a>
+                    </div>
                   </div>
-                  <div class="uk-width-large-2-4 pull-large-1-4 uk-text-center">
-                    <div class="uk-grid uk-grid-small uk-flex uk-flex-middle uk-flex-center">
-                      <div>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-double-left fa-fw"></i></span>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-left fa-fw"></i></span>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                      </div>
-                      <div>
-                        <select>
-                          <option selected>1</option>
-                          <option>2</option>
-                        </select>
-                        <span class="mx-1">/<span class="pl-1">20</span></span>
-                      </div>
-                      <div>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-right fa-fw"></i></span>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-double-right fa-fw"></i></span>
-                      </div>
+                  <div class="flex-wrap uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="min_width100">
+                      <span class="uk-width-1-1">中文筆劃：</span>
+                    </div>
+                    <div class="uk-flex-item-1">
+                      <a class="px-1 linkline" href="#" title="#">1</a>
+                    </div>
+                  </div>
+                  <div class="flex-wrap uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="min_width100">
+                      <span class="uk-width-1-1">A to Z：</span>
+                    </div>
+                    <div class="uk-flex-item-1">
+                      <a class="px-1 linkline" href="#" title="#">A</a>
                     </div>
                   </div>
                 </div>
-                <ul class="uk-list uk-list-striped">
-                  <li class="p-2 p-lg-3">
-                    <h4 class="uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">1.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                    <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
-                      <div class="child_margin flex-grow-1 mr-1"><span class="bg_primary px-1 mb-1">新到資源</span><span class="bg_primary px-1 mb-1">試用</span><span class="bg_primary px-1 mb-1">免費</span></div>
+              </div>
+              <div class="uk-form uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                <div class="uk-width-1-2 uk-width-large-1-4 uk-visible-large">
+                  <select class="uk-width-1-1">
+                    <option>最新在前</option>
+                  </select>
+                </div>
+                <div class="uk-width-1-2 uk-width-large-1-4 uk-text-right push-large-2-4 uk-visible-large">
+                  <label>每頁
+                    <input type="number" min="0" max="10" value="5" class="min_width50"> 筆
+                  </label>
+                </div>
+                <div class="uk-width-large-2-4 pull-large-1-4 uk-text-center">
+                  <div class="uk-grid uk-grid-small uk-flex uk-flex-middle uk-flex-center">
+                    <div>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-double-left fa-fw"></i></span>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-left fa-fw"></i></span>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
                     </div>
-                    <div class="fontSizeS hidden pl-3 pb-1 visible@l">
-                      <ul class="pl-0 uk-grid uk-grid-small">
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">資料類型：</span>
-                            <span class="commaCH d-inline">個到之酒那了名以足加爭隊是設灣立</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">狀　　態：</span>
-                            <span class="commaCH d-inline">訂購</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">語　　言：</span>
-                            <span class="commaCH d-inline">西文</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">類　　型：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">索引摘要</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">主　　題：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">科學工</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">校外連線：</span>
-                            <span class="commaCH d-inline">可校外連線</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">收錄年代：</span>
-                            <span class="commaCH d-inline">1844~1906</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">平　　台：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">碩睿 (1899-)</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">使用手冊：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
-                          </div>
-                        </li>
-                      </ul>
+                    <div>
+                      <select>
+                        <option selected>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="mx-1">/<span class="pl-1">20</span></span>
                     </div>
-                    <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
-                      <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="removeAndToggle(this, 'LI', '.offcanvas', 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
-                      <div class="child_margin"><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
+                    <div>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-right fa-fw"></i></span>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-double-right fa-fw"></i></span>
                     </div>
-                    <div class="offcanvas hidden">
-                      <div class="bg_transparent offcanvas-bar uk-position-fixed">
-                        <div class="uk-overlay-panel"></div>
-                        <div class="padding_medium min_height100vh uk-position-relative">
-                          <div class="bg_primary opacity90 uk-overlay-panel"></div>
-                          <div class="uk-position-relative">
-                            <p class="m-0"><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="AddClass('.offcanvas', 'hidden'); return false;">關閉</button></p>
-                            <h4 class="underline mt-0 uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">1.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                            <div class="uk-overflow-container">
-                              <table class="uk-table uk-table-condensed">
-                                <tbody>
-                                  <tr>
-                                    <td class="min_width100 pr-2">相關題名</td>
-                                    <td>Web of Science (SCIE) WOS-SCIE Web of Science</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">資料類型</td>
-                                    <td>資料庫</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">平　　台</td>
-                                    <td><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">狀　　態</td>
-                                    <td>訂購</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">語　　言</td>
-                                    <td>西文</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">類　　型</td>
-                                    <td><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">主　　題</td>
-                                    <td><a class="linkline uk-text-bold" href="#" title="#">科學工</a></td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">校外連線</td>
-                                    <td>可校外連線</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">使用手冊</td>
-                                    <td>快速參考指南</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="min_width100 pr-2">簡介</td>
-                                    <td><span class="editor">提供台灣<font color="red">同時上線限制：5人</font></span>地區的消費者消費趨勢與生活型態的調查資料。<span class="editor"><a href="#">可探知200個</a></span>以上商品市場及數百類目標消費群之生活意見與態度，並提供台灣市場行銷與品牌化(Branding)重要資訊，協助發展新商品概念、找尋目標消費者、市場區隔、傳播策略、品牌管理。<span class="editor"><span style="color: blue;">快速參考指南</span></span></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
+                  </div>
+                </div>
+              </div>
+              <ul class="uk-list uk-list-striped">
+                <li id="li01" class="p-2 p-lg-3">
+                  <h4 class="uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">1.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                  <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
+                    <div class="child_margin flex-grow-1 mr-1"><span class="bg_primary px-1 mb-1">新到資源</span><span class="bg_primary px-1 mb-1">試用</span><span class="bg_primary px-1 mb-1">免費</span></div>
+                  </div>
+                  <div class="fontSizeS hidden pl-3 pb-1 visible@l">
+                    <ul class="pl-0 uk-grid uk-grid-small">
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">資料類型：</span>
+                          <span class="commaCH d-inline">個到之酒那了名以足加爭隊是設灣立</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">狀　　態：</span>
+                          <span class="commaCH d-inline">訂購</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">語　　言：</span>
+                          <span class="commaCH d-inline">西文</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">類　　型：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">索引摘要</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">主　　題：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">科學工</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">校外連線：</span>
+                          <span class="commaCH d-inline">可校外連線</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">收錄年代：</span>
+                          <span class="commaCH d-inline">1844~1906</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">平　　台：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">碩睿 (1899-)</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">使用手冊：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
+                    <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="removeAndToggle(this, 'LI', '.offcanvas', 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
+                    <div class="child_margin"><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
+                  </div>
+                  <div class="offcanvas hidden">
+                    <div class="bg_transparent offcanvas-bar uk-position-fixed">
+                      <div class="uk-overlay-panel"></div>
+                      <div class="padding_medium min_height100vh uk-position-relative">
+                        <div class="bg_primary opacity90 uk-overlay-panel"></div>
+                        <div class="uk-position-relative">
+                          <p class="m-0"><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="AddClass('.offcanvas', 'hidden'); return false;">關閉</button></p>
+                          <h4 class="underline mt-0 uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">1.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                          <div class="uk-overflow-container">
+                            <table class="uk-table uk-table-condensed">
+                              <tbody>
+                                <tr>
+                                  <td class="min_width100 pr-2">相關題名</td>
+                                  <td>Web of Science (SCIE) WOS-SCIE Web of Science</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">資料類型</td>
+                                  <td>資料庫</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">平　　台</td>
+                                  <td><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">狀　　態</td>
+                                  <td>訂購</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">語　　言</td>
+                                  <td>西文</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">類　　型</td>
+                                  <td><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a><a class="linkline d-block mb-2 uk-text-bold" href="#" title="#">單行顯示文字連結</a></td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">主　　題</td>
+                                  <td><a class="linkline uk-text-bold" href="#" title="#">科學工</a></td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">校外連線</td>
+                                  <td>可校外連線</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">使用手冊</td>
+                                  <td>快速參考指南</td>
+                                </tr>
+                                <tr>
+                                  <td class="min_width100 pr-2">簡介</td>
+                                  <td><span class="editor">提供台灣<font color="red">同時上線限制：5人</font></span>地區的消費者消費趨勢與生活型態的調查資料。<span class="editor"><a href="#">可探知200個</a></span>以上商品市場及數百類目標消費群之生活意見與態度，並提供台灣市場行銷與品牌化(Branding)重要資訊，協助發展新商品概念、找尋目標消費者、市場區隔、傳播策略、品牌管理。<span class="editor"><span style="color: blue;">快速參考指南</span></span></td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </li>
-                  <li class="p-2 p-lg-3">
-                    <h4 class="uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">2.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                    <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
-                      <div class="child_margin flex-grow-1 mr-1"><span class="bg_primary px-1 mb-1">新到資源</span><span class="bg_primary px-1 mb-1">試用</span><span class="bg_primary px-1 mb-1">免費</span></div>
-                    </div>
-                    <div class="fontSizeS hidden pl-3 pb-1 visible@l">
-                      <ul class="pl-0 uk-grid uk-grid-small">
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">資料類型：</span>
-                            <span class="commaCH d-inline">個到之酒那了名以足加爭隊是設灣立</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">狀　　態：</span>
-                            <span class="commaCH d-inline">訂購</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">語　　言：</span>
-                            <span class="commaCH d-inline">西文</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">類　　型：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">索引摘要</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">主　　題：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">科學工</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">校外連線：</span>
-                            <span class="commaCH d-inline">可校外連線</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">收錄年代：</span>
-                            <span class="commaCH d-inline">1844~1906</span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">平　　台：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">碩睿 (1899-)</a></span>
-                          </div>
-                        </li>
-                        <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
-                          <span class="uk-margin-small-right">•</span>
-                          <div class="urlFix d-inline-block mr-3 mr-sm-5">
-                            <span class="mr-1">使用手冊：</span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
-                            <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
-                      <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="removeAndToggle(this, 'LI', '.offcanvas', 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
-                      <div class="child_margin"><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
-                    </div>
-                    <div class="offcanvas hidden">
-                      <div class="bg_transparent offcanvas-bar uk-position-fixed">
-                        <div class="uk-overlay-panel"></div>
-                        <div class="padding_medium min_height100vh uk-position-relative">
-                          <div class="bg_primary opacity90 uk-overlay-panel"></div>
-                          <div class="uk-position-relative">
-                            <p class="m-0"><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="AddClass('.offcanvas', 'hidden'); return false;">關閉</button></p>
-                            <h4 class="underline mt-0 uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">2.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">相關題名</span>Web of Science (SCIE) WOS-SCIE Web of Science</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">資料類型</span>資料庫</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">平　　台</span><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">簡　　介</span>為美國Thomson Reuters 於 1997 年間建置之引用文獻索引資料庫系統。收錄科學技術類期刊計 8,280 餘種(較光碟版約多2,000 餘種)，涵蓋主題約150 餘種。</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">狀　　態</span>訂購</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">語　　言</span>西文</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">類　　型</span><a class="linkline uk-text-bold" href="#" title="#">索引摘要</a></p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">主　　題</span><a class="linkline uk-text-bold" href="#" title="#">科學工</a></p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">校外連線</span>可校外連線</p>
-                            <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">使用手冊</span>快速參考指南</p>
-                          </div>
+                  </div>
+                </li>
+                <li id="li02" class="p-2 p-lg-3">
+                  <h4 class="uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">2.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                  <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
+                    <div class="child_margin flex-grow-1 mr-1"><span class="bg_primary px-1 mb-1">新到資源</span><span class="bg_primary px-1 mb-1">試用</span><span class="bg_primary px-1 mb-1">免費</span></div>
+                  </div>
+                  <div class="fontSizeS hidden pl-3 pb-1 visible@l">
+                    <ul class="pl-0 uk-grid uk-grid-small">
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">資料類型：</span>
+                          <span class="commaCH d-inline">個到之酒那了名以足加爭隊是設灣立</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">狀　　態：</span>
+                          <span class="commaCH d-inline">訂購</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">語　　言：</span>
+                          <span class="commaCH d-inline">西文</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">類　　型：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">索引摘要</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">主　　題：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">科學工</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">校外連線：</span>
+                          <span class="commaCH d-inline">可校外連線</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">收錄年代：</span>
+                          <span class="commaCH d-inline">1844~1906</span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">平　　台：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">碩睿 (1899-)</a></span>
+                        </div>
+                      </li>
+                      <li class="min_width1_2! min_width1_3!@m min_width1_5!@l">
+                        <span class="uk-margin-small-right">•</span>
+                        <div class="urlFix d-inline-block mr-3 mr-sm-5">
+                          <span class="mr-1">使用手冊：</span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">簡介</a></span>
+                          <span class="commaCH d-inline"><a class="linkline color_secondary" href="#" title="#">使用手冊</a></span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="position-relative flex-wrap pl-3 uk-flex uk-flex-middle uk-margin-small">
+                    <div class="child_margin flex-grow-1 mr-1"><a class="px-1 uk-button uk-margin-small-bottom" href="#question" title="#" data-uk-modal="{center:true}">問題通報</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊指標</a><a class="px-1 uk-button uk-margin-small-bottom" href="#" title="#">期刊目次服務</a><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="removeAndToggle(this, 'LI', '.offcanvas', 'hidden'); return false;">簡介<i class="ml-1 fas fa-angle-right"></i></button></div>
+                    <div class="child_margin"><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="收藏" aria-label="favorite"><i class="fas fa-heart uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="推薦" aria-label="like"><i class="fas fa-thumbs-up uk-margin-small-right"></i><span>2</span></a><a class="color_primary px-1 mb-1 uk-button uk-button-small" href="#" title="瀏覽" aria-label="view"><i class="fas fa-eye uk-margin-small-right"></i><span>2</span></a></div>
+                  </div>
+                  <div class="offcanvas hidden">
+                    <div class="bg_transparent offcanvas-bar uk-position-fixed">
+                      <div class="uk-overlay-panel"></div>
+                      <div class="padding_medium min_height100vh uk-position-relative">
+                        <div class="bg_primary opacity90 uk-overlay-panel"></div>
+                        <div class="uk-position-relative">
+                          <p class="m-0"><button class="btn_summary px-1 uk-button uk-margin-small-bottom" onclick="AddClass('.offcanvas', 'hidden'); return false;">關閉</button></p>
+                          <h4 class="underline mt-0 uk-text-bold uk-padding-remove"><a class="color_primary" href="#" title="#"><span class="min_width30 mr-2">2.</span>Science Citation Index Expanded--SCIE (Web of Science)<i class="fas fa-chevron-circle-right fa-fw uk-align-right" data-fa-transform="shrink-3 down-3"></i></a></h4>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">相關題名</span>Web of Science (SCIE) WOS-SCIE Web of Science</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">資料類型</span>資料庫</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">平　　台</span><a class="linkline uk-text-bold" href="#" title="#">碩睿 (1899-)</a></p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">簡　　介</span>為美國Thomson Reuters 於 1997 年間建置之引用文獻索引資料庫系統。收錄科學技術類期刊計 8,280 餘種(較光碟版約多2,000 餘種)，涵蓋主題約150 餘種。</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">狀　　態</span>訂購</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">語　　言</span>西文</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">類　　型</span><a class="linkline uk-text-bold" href="#" title="#">索引摘要</a></p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">主　　題</span><a class="linkline uk-text-bold" href="#" title="#">科學工</a></p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">校外連線</span>可校外連線</p>
+                          <p class="color_white urlFix"><span class="border paddingLR_small uk-margin-small-right">使用手冊</span>快速參考指南</p>
                         </div>
                       </div>
                     </div>
-                  </li>
-                </ul>
-                <div class="uk-form uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
-                  <div class="uk-width-1-2 uk-width-large-1-4 uk-visible-large">
-                    <select class="uk-width-1-1">
-                      <option>最新在前</option>
-                    </select>
                   </div>
-                  <div class="uk-width-1-2 uk-width-large-1-4 uk-text-right push-large-2-4 uk-visible-large">
-                    <label>每頁
-                      <input type="number" min="0" max="10" value="5" class="min_width50"> 筆
-                    </label>
-                  </div>
-                  <div class="uk-width-large-2-4 pull-large-1-4 uk-text-center">
-                    <div class="uk-grid uk-grid-small uk-flex uk-flex-middle uk-flex-center">
-                      <div>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-double-left fa-fw"></i></span>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-left fa-fw"></i></span>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
-                      </div>
-                      <div>
-                        <select>
-                          <option selected>1</option>
-                          <option>2</option>
-                        </select>
-                        <span class="mx-1">/<span class="pl-1">20</span></span>
-                      </div>
-                      <div>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
-                        <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-right fa-fw"></i></span>
-                        <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-double-right fa-fw"></i></span>
-                      </div>
+                </li>
+              </ul>
+              <div class="uk-form uk-grid uk-grid-small uk-margin" data-uk-grid-margin>
+                <div class="uk-width-1-2 uk-width-large-1-4 uk-visible-large">
+                  <select class="uk-width-1-1">
+                    <option>最新在前</option>
+                  </select>
+                </div>
+                <div class="uk-width-1-2 uk-width-large-1-4 uk-text-right push-large-2-4 uk-visible-large">
+                  <label>每頁
+                    <input type="number" min="0" max="10" value="5" class="min_width50"> 筆
+                  </label>
+                </div>
+                <div class="uk-width-large-2-4 pull-large-1-4 uk-text-center">
+                  <div class="uk-grid uk-grid-small uk-flex uk-flex-middle uk-flex-center">
+                    <div>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-double-left fa-fw"></i></span>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted"><i class="fas fa-angle-left fa-fw"></i></span>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="首頁" hidden><i class="fas fa-angle-double-left fa-fw"></i></a>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="上一頁" hidden><i class="fas fa-angle-left fa-fw"></i></a>
+                    </div>
+                    <div>
+                      <select>
+                        <option selected>1</option>
+                        <option>2</option>
+                      </select>
+                      <span class="mx-1">/<span class="pl-1">20</span></span>
+                    </div>
+                    <div>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="下一頁"><i class="fas fa-angle-right fa-fw"></i></a>
+                      <a class="py-1 px-1 px-xl-3 text-secondary" href="#" title="末頁"><i class="fas fa-angle-double-right fa-fw"></i></a>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-right fa-fw"></i></span>
+                      <span class="py-1 px-1 px-xl-3 uk-text-muted" hidden><i class="fas fa-chevron-double-right fa-fw"></i></span>
                     </div>
                   </div>
                 </div>
@@ -935,11 +1108,12 @@
             </div>
           </div>
         </div>
-        <!-- .uk-grid -->
       </div>
-      <!-- .uk-panel -->
+      <!-- .uk-grid -->
     </div>
-    <!-- .uk-container -->
+    <!-- .uk-panel -->
+  </div>
+  <!-- .uk-container -->
   </div>
   <!-- .bg_img -->
   <footer class="uk-position-relative">
