@@ -390,100 +390,48 @@
   <div id="searchBar" class="mt-3">
     <!-- <div id="searchBar" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}"> -->
     <div class="paddingLR_medium paddingB_large paddingTB_xlarge_l uk-flex uk-flex-center uk-flex-middle">
-      <div class="searchBar box_shadow3 padding_large uk-width-large-1-2 uk-container uk-container-center uk-position-relative">
+      <div class="searchBar box_shadow3 padding_large uk-width-large-2-3 uk-width-xlarge-1-2 uk-container uk-container-center uk-position-relative">
         <div class="bg_white opacity90 uk-border-rounded uk-overlay-panel"></div>
         <form class="uk-form uk-position-relative">
+          <!-- <h3>資源查詢</h3> -->
           <div class="tabBar_switcher">
             <ul class="tab_primary uk-tab" data-uk-switcher="{connect:'#switcher'}">
               <li>
-                <a href="#">電子資源目錄</a>
-              </li>
-              <li>
-                <a href="#">電子書</a>
-              </li>
-              <li>
-                <a href="#">資源探索</a>
+                <a href="#">資源查詢</a>
               </li>
             </ul>
             <div class="uk-margin-top">
               <ul id="switcher" class="uk-switcher uk-margin">
                 <li>
-                  <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                    <div class="uk-width-large-3-10 uk-visible-large">
-                      <select class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search1">
-                        <option>全部</option>
+                  <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                    <div class="uk-width-medium-4-10">
+                      <input class="uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                    </div>
+                    <div class="uk-width-1-2 uk-width-medium-2-10">
+                      <select class="uk-form-large uk-width-1-1">
+                        <option>-不限欄位-</option>
+                        <option>資源名稱</option>
+                        <option>資料庫平台/出版者</option>
+                        <option>資源主題</option>
+                        <option>ISSN</option>
                       </select>
                     </div>
-                    <div class="uk-width-3-4 uk-width-large-5-10">
-                      <input id="search1" class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                    <div class="uk-width-1-2 uk-width-medium-2-10">
+                      <select class="uk-form-large uk-width-1-1">
+                        <option>-所有資源-</option>
+                        <option>資料庫</option>
+                        <option>電子期刊</option>
+                      </select>
                     </div>
-                    <div class="uk-width-1-4 uk-width-large-2-10">
+                    <div class="uk-width-medium-2-10">
                       <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
                     </div>
                   </div>
                   <div class="mt-1 uk-form-row">
-                    <a class="uk-align-right" href="#">進階查詢</a>
-                    <span class="uk-form-label">資料類型：</span>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type1" checked>資料庫</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type1">電子期刊</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type1">電子書</label>
+                    <a class="mb-0 uk-align-right" href="#">進階查詢</a>
+                    <label class="uk-margin-right"><input class="uk-margin-small-right" type="checkbox">精確檢索</label>
                   </div>
                   <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
-                </li>
-                <li>
-                  <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                    <div class="uk-width-large-3-10 uk-visible-large">
-                      <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search2">
-                        <option>全部</option>
-                      </select>
-                    </div>
-                    <div class="uk-width-3-4 uk-width-large-5-10">
-                      <input id="search2" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                    </div>
-                    <div class="uk-width-1-4 uk-width-large-2-10">
-                      <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                    </div>
-                  </div>
-                  <div class="mt-1 uk-form-row">
-                    <a class="uk-align-right" href="#">進階查詢</a>
-                    <span class="uk-form-label">資料類型：</span>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type2" checked>資料庫</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type2">電子期刊</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type2">電子書</label>
-                  </div>
-                  <p class="uk-form-help-block uk-clearfix">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生物</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月旦</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中國</a></span></p>
-                </li>
-                <li>
-                  <div class="searchBarGroup3 uk-grid uk-grid-collapse" data-uk-grid-margin>
-                    <div class="uk-width-large-3-10 uk-visible-large">
-                      <select class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search2">
-                        <option>全部</option>
-                      </select>
-                    </div>
-                    <div class="uk-width-3-4 uk-width-large-5-10">
-                      <input id="search2" class="bg_whiteOpacity7 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                    </div>
-                    <div class="uk-width-1-4 uk-width-large-2-10">
-                      <a href="#" class="btn_primary uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                    </div>
-                  </div>
-                  <div class="mt-1 uk-form-row">
-                    <a class="uk-align-right" href="#">進階查詢</a>
-                    <span class="uk-form-label">資料類型：</span>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type3" checked>資料庫</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type3">電子期刊</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="type3">電子書</label>
-                  </div>
-                  <p class="uk-form-help-block uk-clearfix">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">生</a></span><span class="commaCH"><a class="linkline" href="#" title="#">月</a></span><span class="commaCH"><a class="linkline" href="#" title="#">中</a></span></p>
                 </li>
               </ul>
             </div>
