@@ -214,7 +214,7 @@ ol.listDecimalRow.badge>li:before {background: #73a3a9;}
 }
 
 .index .banner {
-  min-height: 300px;
+  min-height: 150px;
 }
 
 footer, footer a {color: white !important;}
