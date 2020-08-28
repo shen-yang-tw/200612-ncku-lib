@@ -219,6 +219,7 @@ ol.listDecimalRow.badge>li:before {background: #73a3a9;}
 
 .index .max_height {
   min-height: 200px;
+  max-height: 263px;
 }
 
 @media (min-width: 960px) {
