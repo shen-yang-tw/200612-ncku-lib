@@ -214,7 +214,18 @@ ol.listDecimalRow.badge>li:before {background: #73a3a9;}
 }
 
 .index .banner {
-  min-height: 150px;
+  min-height: 100px;
+}
+
+.index .max_height {
+  min-height: 200px;
+}
+
+@media (min-width: 960px) {
+.index .paddingTB_xlarge_l {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
 }
 
 footer, footer a {color: white !important;}
