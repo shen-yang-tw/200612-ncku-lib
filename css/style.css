@@ -352,11 +352,6 @@ ol.listDecimalRow.badge>li:before {
 
 /* .logo img {max-height: 30px;} */
 
-.bg_img>.uk-cover-background {
-  background-position-x: right;
-  background-position-y: 15%;
-}
-
 .menuBar {
   /* background-color: rgba(255, 255, 255, 0.5); */
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0) 100%);
